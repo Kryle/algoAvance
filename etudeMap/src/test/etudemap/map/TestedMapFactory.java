@@ -19,6 +19,7 @@
 package test.etudemap.map;
 
 import etudemap.map.Map;
+import etudemap.map.MapImpl;
 
 /**
  *
@@ -27,13 +28,11 @@ import etudemap.map.Map;
 public class TestedMapFactory {
     
     public static Map<String, String> createOpenAdressMap(int mapSize){
-        throw new UnsupportedOperationException("Not supported yet.");
-        //return new OpenAdressMap<>(mapSize);
+        return new MapImpl<>(mapSize);
     }
     
     public static Map<String, String> createExtChainMap(int mapSize){
-        throw new UnsupportedOperationException("Not supported yet.");
-        //return new ExternalChain<>(mapSize);
+        return new MapImpl<>(mapSize);
     }
     
 }
